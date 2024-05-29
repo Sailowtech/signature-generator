@@ -1,14 +1,30 @@
-function copyHTML() {
-            const html = document.getElementById("signature").outerHTML;
-            navigator.clipboard.writeText(html).then(() => {
-                alert('HTML code copied to clipboard!');
-            }).catch(err => {
-                console.error('Failed to copy: ', err);
-            });
+// Func taken from Paul Gerry's repo for Coaching EPFL's signature
+// See https://gist.github.com/Paul-Gy/a5315104016faac5c117bec26ec437b6
+function copyResult() {
+    const copyText = document.getElementById('signature')
+    const range = document.createRange()
+    let selection = window.getSelection()
+    range.selectNode(copyText)
+    selection.removeAllRanges()
+    selection.addRange(range)
+
+    try {
+        if (document.execCommand('copy')) {
+            alert('La signature a été copiée !')
         }
-		
-		
-		
+    } catch(err) {
+        alert(err)
+    }
+
+    selection = window.getSelection()
+    if (typeof selection.removeRange === 'function') {
+        selection.removeRange(range)
+    } else if (typeof selection.removeAllRanges === 'function') {
+        selection.removeAllRanges()
+    }
+}
+
+
 function updateSignature(event) {
 	let name = document.getElementById("name_input").value;
 	let poste = document.getElementById("post_input").value;
