@@ -1,3 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Sailowtech Signature Generator</title>
+</head>
+<body>
+
+<form id="SigForm">
+    <div class="row">
+        <label for="fullname">Prénom et Nom:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Prénom et nom">
+    </div>
+    <div class="row">
+        <label for="multiline">Your Message:</label>
+        <textarea id="multiline" name="multiline" placeholder="Poste"></textarea>
+    </div>
+    <div class="row">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Adresse mail Sailowtech">
+    </div>
+    <div class="row">
+        <label for="phone_input">Phone Number:</label>
+        <input type="tel" id="phone_input" name="phone_input" placeholder="Numéro de téléphone">
+    </div>
+    <button type="button" onclick="copyHTML()">Copy HTML</button>
+</form>
+
 <table style="font-size:10px">
     <tbody>
     <tr>
@@ -79,3 +107,6 @@
     </tr>
     </tbody>
 </table>
+
+</body>
+</html>
