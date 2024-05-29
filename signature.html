@@ -1,49 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!--    <link rel="stylesheet" href="./src/styles.css">-->
-    <meta charset="UTF-8" />
+    <!--    <link rel="stylesheet" href="./src/styles.css">-->
+    <meta charset="UTF-8"/>
     <title>Sailowtech Signature Generator</title>
-	<script src="./src/func.js"></script>
+    <script src="./src/func.js"></script>
 </head>
 <body>
 
 <form id="SigForm">
-        <div class="row">
-            <label for="fullname">Prénom et Nom:</label>
-            <input type="text" id="fullname" name="fullname" placeholder="Prénom et nom">
-        </div>
-        <div class="row">
-            <label for="multiline">Your Message:</label>
-            <textarea id="multiline" name="multiline" placeholder="Poste"></textarea>
-        </div>
-        <div class="row">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Adresse mail Sailowtech">
-        </div>
-        <div class="row">
-            <label for="phone_input">Phone Number:</label>
-            <input type="tel" id="phone_input" name="phone_input" placeholder="Numéro de téléphone">
-        </div>
-        <button type="button" onclick="copyHTML()">Copy HTML</button>
-    </form>
+    <div class="row">
+        <label for="fullname">Prénom et Nom:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Prénom et nom">
+    </div>
+    <div class="row">
+        <label for="multiline">Your Message:</label>
+        <textarea id="multiline" name="multiline" placeholder="Poste"></textarea>
+    </div>
+    <div class="row">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Adresse mail Sailowtech">
+    </div>
+    <div class="row">
+        <label for="phone_input">Phone Number:</label>
+        <input type="tel" id="phone_input" name="phone_input" placeholder="Numéro de téléphone">
+    </div>
+    <button type="button" onclick="copyHTML()">Copy HTML</button>
+</form>
 
-<div id="signature" style="width: 100%; height: 100%; position: relative; background: white">
-    <a href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYJWV3Oj2MvMqwHW5NMycS4tIe8J11GkU4Sych-dkMFqZWDR4Sxraqqk929BMcVCXU8EE02gxJ3rI6yP-69IiyyiYf7J1SOMhQ=s2560?source=screenshot.guru">
-        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYJWV3Oj2MvMqwHW5NMycS4tIe8J11GkU4Sych-dkMFqZWDR4Sxraqqk929BMcVCXU8EE02gxJ3rI6yP-69IiyyiYf7J1SOMhQ=s2560" style="width: 270px; height: 59.58px; left: 65px; top: 22px; position: absolute"/>
-    </a>
-	<!--<img src="./res/SLWT.png" alt="Sailowtech logo" style="width: 270px; height: 59.58px; left: 65px; top: 22px; position: absolute">-->
-    
-    <div id="name" style="width: 200px; height: 11px; left: 11px; top: 101px; position: absolute; color: #072B5D; font-size: 23px; font-family: League Spartan, Verdana; font-weight: 800; word-wrap: break-word">Nom Prénom</div>
-    <div id="poste" style="width: 140px; height: 23px; left: 11px; top: 128px; position: absolute; color: #1B708A; font-size: 13px; font-family: League Spartan, Verdana; font-weight: 700; word-wrap: break-word">Poste à Slwt</div>
-    <div id="mail" style="width: 194px; height: 23px; left: 235px; top: 107px; position: absolute; color: #1B708A; font-size: 12px; font-family: League Spartan, Verdana; font-weight: 600; word-wrap: break-word">adresseemail@sailowtech.ch</div>
-    <div id="link" style="width: 140px; height: 23px; left: 235px; top: 139px; position: absolute; color: #1B708A; font-size: 12px; font-family: League Spartan, Verdana; font-weight: 600; word-wrap: break-word">sailowtech.ch</div>
-    <div id="phone" style="width: 140px; height: 23px; left: 235px; top: 171px; position: absolute; color: #1B708A; font-size: 12px; font-family: League Spartan, Verdana; font-weight: 600; word-wrap: break-word">+numero de tel</div>
-    
-	<img src="./res/mail.png" alt="Mail" style="width: 27.76px; height: 27.76px; left: 200px; top: 100px; position: absolute">
-	<img src="./res/link.png" alt="Link" style="width: 27.75px; height: 27.75px; left: 200px; top: 132px; position: absolute">
-	<img src="./res/tel.png" alt="Telephone" style="width: 27.76px; height: 27.76px; left: 200px; top: 164px; position: absolute">
-	
-</div>
+<table id="signature"
+       style="width: 100%; height: 100%; background: white; font-family: Verdana, Arial, Helvetica, sans-serif">
+    <tbody>
+    <tr>
+        <!--            <td width="100" height="120" style="padding-right: 8px">-->
+        <td style="text-align: center;" width="160">
+            <a href="https://sailowtech.ch">
+                <img alt="Sailowtech"
+                     src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ7em8PLOO07oUsaO1U1HCYv7WkbZver699uikHVRyxnzoWnwQVWpAY_fR1B_c64Beym5uMOTE72c5gsToTqyaDadtL5_5-4zw=s2560"/>
+            </a>
+
+        </td>
+        <td>
+            <div id="name"
+                 style="color: #072B5D; font-size: 23px; font-family: League Spartan, Verdana; font-weight: 800; word-wrap: break-word">
+                Nom Prénom
+            </div>
+            <div id="poste"
+                 style="color: #1B708A; font-size: 13px; font-family: League Spartan, Verdana; font-weight: 700; word-wrap: break-word">
+                Poste à Slwt
+            </div>
+            <div>
+                <img src="./res/mail.png" alt="Mail">
+                <div id="mail"
+                     style="color: #1B708A; font-size: 12px; font-family: League Spartan, Verdana; font-weight: 600; word-wrap: break-word">
+                    adresseemail@sailowtech.ch
+                </div>
+            </div>
+            <div>
+                <img src="./res/link.png" alt="Link">
+                <div id="link"
+                     style="color: #1B708A; font-size: 12px; font-family: League Spartan, Verdana; font-weight: 600; word-wrap: break-word">
+                    sailowtech.ch
+                </div>
+            </div>
+            <div>
+                <img src="./res/tel.png" alt="Telephone">
+                <div id="phone"
+                     style="color: #1B708A; font-size: 12px; font-family: League Spartan, Verdana; font-weight: 600; word-wrap: break-word">
+                    +numero de tel
+                </div>
+            </div>
+
+
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+
 </body>
 </html>
