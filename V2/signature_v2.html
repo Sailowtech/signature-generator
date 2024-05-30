@@ -20,112 +20,123 @@
       color: rgb(7,43,93);
     }
 
-
+    .background {
+          height: 100vh; /* Set the height of the container */
+          background-image: url("./img/24_19896.jpg"); /* URL of the background image */
+          background-size: cover; /* Scale the image to cover the container */
+          background-position: center; /* Center the image */
+          background-repeat: no-repeat; /* Prevent the image from repeating */
+        }
 
 
 
     </style>
 </head>
 <body>
+<div class="background">
+        <h3 style="padding-left: 50%; padding-right: 10%;padding-top:2rem;padding-bottom:2rem;text-align:center;color:rgb(7,43,93);">
+            Générateur de Sailowsignatures
+        </h3>
 
-<h3 style="padding-left: 30%; padding-right: 30%;padding-top:2rem;padding-bottom:2rem;text-align:center;color:rgb(7,43,93);">
-    Générateur de Sailowsignatures
-</h3>
+        <form style="padding-left: 50%; padding-right: 10%;">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="name_input" placeholder="">
+                <label for="name_input">Prénom et Nom</label>
+            </div>
+            <div class="form-floating mb-3">
+            <textarea class="form-control" id="post_input" rows="3"
+                      placeholder="Graphic Designer | Sailowtech"></textarea>
+                <label for="post_input">Poste</label>
+            </div>
+            <div class="input-group mb-3">
 
-<form style="padding-left: 30%; padding-right: 30%;">
-    <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="name_input" placeholder="">
-        <label for="name_input">Prénom et Nom</label>
-    </div>
-    <div class="form-floating mb-3">
-        <textarea class="form-control" id="post_input" rows="3" placeholder="Graphic Designer | Sailowtech"></textarea>
-        <label for="post_input">Poste</label>
-    </div>
-    <div class="input-group mb-3">
-
-        <div class="form-floating">
-            <input type="email" class="form-control" id="email_input" placeholder="elena.dimitratchkova">
-            <label class="form-label" for="email_input">Email</label>
-        </div>
-        <span class="input-group-text">@sailowtech.ch</span>
-    </div>
-
-    <div class="input-group mb-3">
-        <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="phone_input" placeholder="+41 76 123 45 67">
-            <label for="phone_input" class="form-label">Numéro de téléphone</label>
-        </div>
-        <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="phone_input_2" placeholder="+41 76 123 45 67">
-            <label for="phone_input" class="form-label">Optionnel : second numéro</label>
-        </div>
-    </div>
-</form>
-
-<div style="padding-left: 30%;">
-    <table style="font-size:10px" id="signature">
-        <tbody>
-        <tr>
-            <td style="padding:0px 4px;color:rgb(7,43,93);font-family:Arial,Helvetica,sans-serif;text-align:center">
-                <div style="width:9.6em;margin:1em auto 2em">
-                    <!-- Adjusted the margin-top to move the logo lower -->
-                    <a href="http://sailowtech.ch/">
-                        <img src="https://sailowtech.ch/wp-content/uploads/2024/04/logo-SAILOWTECH.png" alt="user img"
-                             style="border-style:none;max-width:100%" class="CToWUd" data-bit="iit">
-                    </a>
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="email_input" placeholder="elena.dimitratchkova">
+                    <label class="form-label" for="email_input">Email</label>
                 </div>
-                <ul style="margin:0px;padding:0px;border-left-color:rgb(255,168,62);list-style:none;text-align:center">
-                    <li style="display:inline-block;width:2.4em;height:2.4em;max-height:2.4em;text-align:center;border-radius:50%;margin:0.3em;background-color:rgb(47, 180, 182);vertical-align:middle">
-                        <a href="https://www.youtube.com/channel/UC_SZC9cb-TP0uPJfP6kbrJQ"
-                           style="background-color:transparent;outline:0px;display:block;width:24px;height:24px"
-                           target="_blank"
-                           data-saferedirecturl="https://www.google.com/url?q=https://www.youtube.com/channel/UC_SZC9cb-TP0uPJfP6kbrJQ&amp;source=gmail&amp;ust=1673180890518000&amp;usg=AOvVaw1i4ZMPArsZw3bjWDCQLKKL"
-                           rel="noopener">
-                            <img src="https://signature-generator.com/images/email/youtube.png" alt="youtube icon"
-                                 style="border-style:none;max-width:100%;width:1.3em;height:1em;margin:0.7em 0px 0px 0.2em"
-                                 class="CToWUd" data-bit="iit">
-                        </a>
-                    </li>
-                    <li style="display:inline-block;width:2.4em;height:2.4em;max-height:2.4em;text-align:center;border-radius:50%;margin:0.3em;background-color:rgb(47, 180, 182);vertical-align:middle">
-                        <a href="https://www.linkedin.com/company/sailowtech/"
-                           style="background-color:transparent;outline:0px;display:block;width:24px;height:24px"
-                           target="_blank"
-                           data-saferedirecturl="https://www.google.com/url?q=https://www.linkedin.com/company/sailowtech/&amp;source=gmail&amp;ust=1673180890518000&amp;usg=AOvVaw1_whY88Rkjp0kDlztLLjJv"
-                           rel="noopener">
-                            <img src="https://signature-generator.com/images/email/linkedIn.png" alt="linkedIn icon"
-                                 style="border-style:none;max-width:100%;width:1em;height:1em;margin:0.7em 0px 0px 0.2em"
-                                 class="CToWUd" data-bit="iit">
-                        </a>
-                    </li>
-                    <li style="display:inline-block;width:2.4em;height:2.4em;max-height:2.4em;text-align:center;border-radius:50%;margin:0.3em;background-color:rgb(47, 180, 182);vertical-align:middle">
-                        <a href="http://instagram.com/sailowtech"
-                           style="background-color:transparent;outline:0px;display:block;width:24px;height:24px"
-                           target="_blank"
-                           data-saferedirecturl="https://www.google.com/url?q=http://instagram.com/sailowtech&amp;source=gmail&amp;ust=1673180890518000&amp;usg=AOvVaw2bVG990hWOFqTVviBdKEE1"
-                           rel="noopener">
-                            <img src="https://signature-generator.com/images/email/instagram.png" alt="instagram icon"
-                                 style="border-style:none;max-width:100%;width:1.4em;height:1.4em;margin:0.5em 0px 0px 0.1em"
-                                 class="CToWUd" data-bit="iit">
-                        </a>
-                    </li>
-                </ul>
-            </td>
-            <td style="padding:0px 8px;color:rgb(7,43,93);font-size: 13px;font-family:Arial,Helvetica,sans-serif">
-                <div style="margin:0.5em 0px">
-                    <h5 style="margin:0px" id="name">Elena Dimitratchkova</h5>
-                    <div id="poste">Graphic Designer | Sailowtech</div>
+                <span class="input-group-text">@sailowtech.ch</span>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="phone_input" placeholder="+41 76 123 45 67">
+                    <label for="phone_input" class="form-label">Numéro de téléphone</label>
                 </div>
-                <ul style="margin:0px;padding:0px;">
-                    <li style="list-style:none;">
-                        <div id="phone">+41 76 123 45 67</div>
-                    </li>
-                    <li style="list-style:none;color:rgb(255,168,62)">
-                        <a class="visible-link" href="mailto:elena.dimitratchkova@sailowtech.ch" target="_blank"
-                           rel="noopener" id="mail">
-                            elena.dimitratchkova@sailowtech.ch
-                        </a>
-                    </li>
-                    <li style="list-style:none;">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="phone_input_2" placeholder="+41 76 123 45 67">
+                    <label for="phone_input" class="form-label">Optionnel : second numéro</label>
+                </div>
+            </div>
+        </form>
+
+        <div style="padding-left: 55%;">
+            <table style="font-size:10px" id="signature">
+                <tbody>
+                <tr>
+                    <td style="padding:0px 4px;color:rgb(7,43,93);font-family:Arial,Helvetica,sans-serif;text-align:center">
+                        <div style="width:9.6em;margin:1em auto 2em">
+                            <!-- Adjusted the margin-top to move the logo lower -->
+                            <a href="http://sailowtech.ch/">
+                                <img src="https://sailowtech.ch/wp-content/uploads/2024/04/logo-SAILOWTECH.png"
+                                     alt="user img"
+                                     style="border-style:none;max-width:100%" class="CToWUd" data-bit="iit">
+                            </a>
+                        </div>
+                        <ul style="margin:0px;padding:0px;border-left-color:rgb(255,168,62);list-style:none;text-align:center">
+                            <li style="display:inline-block;width:2.4em;height:2.4em;max-height:2.4em;text-align:center;border-radius:50%;margin:0.3em;background-color:rgb(47, 180, 182);vertical-align:middle">
+                                <a href="https://www.youtube.com/channel/UC_SZC9cb-TP0uPJfP6kbrJQ"
+                                   style="background-color:transparent;outline:0px;display:block;width:24px;height:24px"
+                                   target="_blank"
+                                   data-saferedirecturl="https://www.google.com/url?q=https://www.youtube.com/channel/UC_SZC9cb-TP0uPJfP6kbrJQ&amp;source=gmail&amp;ust=1673180890518000&amp;usg=AOvVaw1i4ZMPArsZw3bjWDCQLKKL"
+                                   rel="noopener">
+                                    <img src="https://signature-generator.com/images/email/youtube.png"
+                                         alt="youtube icon"
+                                         style="border-style:none;max-width:100%;width:1.3em;height:1em;margin:0.7em 0px 0px 0.2em"
+                                         class="CToWUd" data-bit="iit">
+                                </a>
+                            </li>
+                            <li style="display:inline-block;width:2.4em;height:2.4em;max-height:2.4em;text-align:center;border-radius:50%;margin:0.3em;background-color:rgb(47, 180, 182);vertical-align:middle">
+                                <a href="https://www.linkedin.com/company/sailowtech/"
+                                   style="background-color:transparent;outline:0px;display:block;width:24px;height:24px"
+                                   target="_blank"
+                                   data-saferedirecturl="https://www.google.com/url?q=https://www.linkedin.com/company/sailowtech/&amp;source=gmail&amp;ust=1673180890518000&amp;usg=AOvVaw1_whY88Rkjp0kDlztLLjJv"
+                                   rel="noopener">
+                                    <img src="https://signature-generator.com/images/email/linkedIn.png"
+                                         alt="linkedIn icon"
+                                         style="border-style:none;max-width:100%;width:1em;height:1em;margin:0.7em 0px 0px 0.2em"
+                                         class="CToWUd" data-bit="iit">
+                                </a>
+                            </li>
+                            <li style="display:inline-block;width:2.4em;height:2.4em;max-height:2.4em;text-align:center;border-radius:50%;margin:0.3em;background-color:rgb(47, 180, 182);vertical-align:middle">
+                                <a href="http://instagram.com/sailowtech"
+                                   style="background-color:transparent;outline:0px;display:block;width:24px;height:24px"
+                                   target="_blank"
+                                   data-saferedirecturl="https://www.google.com/url?q=http://instagram.com/sailowtech&amp;source=gmail&amp;ust=1673180890518000&amp;usg=AOvVaw2bVG990hWOFqTVviBdKEE1"
+                                   rel="noopener">
+                                    <img src="https://signature-generator.com/images/email/instagram.png"
+                                         alt="instagram icon"
+                                         style="border-style:none;max-width:100%;width:1.4em;height:1.4em;margin:0.5em 0px 0px 0.1em"
+                                         class="CToWUd" data-bit="iit">
+                                </a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td style="padding:0px 8px;color:rgb(7,43,93);font-size: 13px;font-family:Arial,Helvetica,sans-serif">
+                        <div style="margin:0.5em 0px">
+                            <h5 style="margin:0px" id="name">Elena Dimitratchkova</h5>
+                            <div id="poste">Graphic Designer | Sailowtech</div>
+                        </div>
+                        <ul style="margin:0px;padding:0px;">
+                            <li style="list-style:none;">
+                                <div id="phone">+41 76 123 45 67</div>
+                            </li>
+                            <li style="list-style:none;color:rgb(255,168,62)">
+                                <a class="visible-link" href="mailto:elena.dimitratchkova@sailowtech.ch" target="_blank"
+                                   rel="noopener" id="mail">
+                                    elena.dimitratchkova@sailowtech.ch
+                                </a>
+                            </li>
+                            <li style="list-style:none;">
               <span>
                 <a class="visible-link" href="http://sailowtech.ch" target="_blank"
                    data-saferedirecturl="https://www.google.com/url?q=http://sailowtech.ch&amp;source=gmail&amp;ust=1673180890518000&amp;usg=AOvVaw2eCHDvgZtgJY-x5KGYCXKB"
@@ -133,21 +144,22 @@
                   sailowtech.ch
                 </a>
               </span>
-                    </li>
-                </ul>
-            </td>
-        </tr>
-        </tbody>
-    </table>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="padding-left: 50%; padding-right: 10%; padding-top: 3rem">
+            <button type="button" onclick="copyResult()" class="btn btn-primary" style="width: 100%">Copier</button>
+        </div>
+
+        <h6 style="padding-left: 50%; padding-right: 10%;padding-top:1rem;padding-bottom:2rem;text-align:center;color:rgb(7,43,93);">
+            Fait avec ❤️ par Elena et Arthur
+        </h6>
+    </div>
 </div>
-
-<div style="padding-left: 30%; padding-right: 30%; padding-top: 3rem">
-    <button type="button" onclick="copyResult()" class="btn btn-primary" style="width: 100%">Copier</button>
-</div>
-
-<h6 style="padding-left: 30%; padding-right: 30%;padding-top:1rem;padding-bottom:2rem;text-align:center;color:rgb(7,43,93);">
-    Fait avec ❤️ par Elena et Arthur
-</h6>
-
 </body>
 </html>
