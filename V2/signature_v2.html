@@ -10,25 +10,32 @@
 <body>
 
 <form style="padding-left: 25%; padding-right: 25%;">
-    <div class="mb-3">
-        <label for="name_input" class="form-label">Prénom et Nom:</label>
-        <input type="text" class="form-control" id="name_input" placeholder="Elena Dimitratchkova">
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="name_input" placeholder="">
+        <label for="name_input">Prénom et Nom</label>
     </div>
-    <div class="mb-3">
-        <label for="post_input" class="form-label">Poste :</label>
+    <div class="form-floating mb-3">
         <textarea class="form-control" id="post_input" rows="3" placeholder="Graphic Designer | Sailowtech"></textarea>
+        <label for="post_input">Poste</label>
     </div>
-    <div class="mb-3">
-        <label class="form-label" for="email_input">Email</label>
-        <div class="input-group">
-            <input type="email" class="form-control" id="email_input" placeholder="elena.dimitratchkova">
-            <span class="input-group-text">@sailowtech.ch</span>
-        </div>
+    <div class="input-group mb-3">
 
+        <div class="form-floating">
+            <input type="email" class="form-control" id="email_input" placeholder="elena.dimitratchkova">
+            <label class="form-label" for="email_input">Email</label>
+        </div>
+        <span class="input-group-text">@sailowtech.ch</span>
     </div>
-    <div class="mb-3">
-        <label for="phone_input" class="form-label">Numéro de téléphone :</label>
-        <input type="text" class="form-control" id="phone_input" placeholder="+41 76 123 45 67">
+
+    <div class="input-group mb-3">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="phone_input" placeholder="+41 76 123 45 67">
+            <label for="phone_input" class="form-label">Numéro de téléphone</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="phone_input_2" placeholder="+41 76 123 45 67">
+            <label for="phone_input" class="form-label">Optionnel : second numéro</label>
+        </div>
     </div>
 </form>
 

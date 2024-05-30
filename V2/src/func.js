@@ -30,6 +30,7 @@ function updateSignature(event) {
 	let poste = document.getElementById("post_input").value;
 	let mail = document.getElementById("email_input").value;
     let phone = document.getElementById("phone_input").value;
+    let phone_2 = document.getElementById("phone_input_2").value;
 
 	if(name == "") {name = "Elena Dimitratchkova"}
 	if(poste == "") {poste = "Graphic Designer | Sailowtech"}
@@ -41,7 +42,7 @@ function updateSignature(event) {
 	document.getElementById("name").textContent = name;
 	document.getElementById("poste").innerHTML = poste;
 	document.getElementById("mail").textContent = mail + "@sailowtech.ch";
-	document.getElementById("phone").textContent = phone;
+	document.getElementById("phone").innerHTML = phone + (phone_2 != "" ? "<br>" + phone_2 :"");
 }
 		
 		
