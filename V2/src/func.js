@@ -36,8 +36,10 @@ function updateSignature(event) {
 	if(mail == "") {mail = "elena.dimitratchkova"}
 	if(phone == "") {phone = "+41 76 123 45 67"}
 
+	if(poste.includes("\n")) { console.log("replaced");poste = poste.replaceAll("\n", "<br>") }
+
 	document.getElementById("name").textContent = name;
-	document.getElementById("poste").textContent = poste;
+	document.getElementById("poste").innerHTML = poste;
 	document.getElementById("mail").textContent = mail + "@sailowtech.ch";
 	document.getElementById("phone").textContent = phone;
 }
