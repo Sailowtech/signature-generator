@@ -38,10 +38,13 @@ function updateSignature(event) {
 	if(phone == "") {phone = "+41 76 123 45 67"}
 
 	if(poste.includes("\n")) { console.log("replaced");poste = poste.replaceAll("\n", "<br>") }
+    mail += "@sailowtech.ch"
+    let mail_link = "mailto:" + mail
 
 	document.getElementById("name").textContent = name;
 	document.getElementById("poste").innerHTML = poste;
-	document.getElementById("mail").textContent = mail + "@sailowtech.ch";
+	document.getElementById("mail").textContent = mail;
+	document.getElementById("mail").href = mail_link;
 	document.getElementById("phone").innerHTML = phone + (phone_2 != "" ? "<br>" + phone_2 :"");
 }
 		
